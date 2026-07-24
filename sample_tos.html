@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CloudSync Pro — Terms of Service & Privacy Policy</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent: #38bdf8;
+            --border: #334155;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 0;
+            line-height: 1.7;
+        }
+
+        header {
+            background-color: #1e293b;
+            border-bottom: 1px solid var(--border);
+            padding: 20px 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 1.5rem;
+            color: var(--accent);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .container {
+            max-width: 860px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .tos-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 40px;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            margin-top: 0;
+            border-bottom: 2px solid var(--border);
+            padding-bottom: 12px;
+            color: var(--text-main);
+        }
+
+        h3 {
+            font-size: 1.25rem;
+            color: var(--accent);
+            margin-top: 30px;
+        }
+
+        p {
+            color: #cbd5e1;
+            margin-bottom: 16px;
+        }
+
+        .effective-date {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin-bottom: 30px;
+        }
+
+        .signup-action {
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #0f172a;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .btn-agree {
+            background: linear-gradient(135deg, #0284c7, #0369a1);
+            color: white;
+            border: none;
+            padding: 12px 28px;
+            font-size: 1rem;
+            font-weight: 600;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .btn-agree:hover {
+            background: linear-gradient(135deg, #0369a1, #075985);
+            transform: translateY(-1px);
+        }
+
+        label {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            cursor: pointer;
+            color: var(--text-muted);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>☁️ CloudSync Pro</h1>
+        <span style="color: var(--text-muted); font-size: 0.9rem;">Legal Center</span>
+    </header>
+
+    <div class="container">
+        <div class="tos-card">
+            <h2>Terms of Service & Privacy Policy</h2>
+            <div class="effective-date">Last Updated: July 2026</div>
+
+            <p>Welcome to CloudSync Pro. Please carefully read these Terms of Service before using our cloud backup and sync software. By clicking "I Agree" or using the service, you agree to be bound by all provisions set forth below.</p>
+
+            <h3>1. Subscription & Payment Terms</h3>
+            <p>Your subscription to CloudSync Pro will automatically renew at the end of each billing cycle for an additional one-year period. You will be billed recurring subscription fee charges using the payment method on file unless cancelled at least 60 days prior to the end of the current term.</p>
+            <p>We reserve the right to modify pricing, and additional fees may apply at our sole discretion without prior notice to you.</p>
+
+            <h3>2. Mandatory Dispute Resolution</h3>
+            <p>You agree that any dispute or claim arising from your use of CloudSync Pro shall be resolved exclusively through binding arbitration on an individual basis and not as a class action. You hereby waive your right to a jury trial or to participate in any class action lawsuit against CloudSync Pro.</p>
+
+            <h3>3. Data Collection & Sharing</h3>
+            <p>By using CloudSync Pro, you grant us permission to transfer your data to third parties and share your activity metadata with third-party advertisers for target marketing and commercial monetization purposes.</p>
+
+            <h3>4. Limitation of Liability</h3>
+            <p>CloudSync Pro is provided on an "as is and as available" basis with no warranty of any kind. CloudSync Pro shall not be liable for any indirect, incidental, or consequential damages resulting from data loss, server downtime, or unauthorized access.</p>
+            <p>You agree to indemnify and hold harmless CloudSync Pro, its directors, and employees from any claims or legal expenses arising from your account usage.</p>
+
+            <div class="signup-action">
+                <label>
+                    <input type="checkbox" id="agree-checkbox">
+                    I have read and agree to the Terms of Service and Privacy Policy.
+                </label>
+                <button class="btn-agree" id="agree-btn">I Agree & Continue</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

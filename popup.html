@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ClauseGuard Popup</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="popup-container">
+    <!-- Header -->
+    <div class="popup-header">
+      <div class="brand">
+        <span class="logo-icon">🛡️</span>
+        <span class="brand-name">ClauseGuard</span>
+      </div>
+      <span class="status-badge" id="status-badge">Ready</span>
+    </div>
+
+    <!-- Main Content Area -->
+    <div id="content-area">
+      <!-- Risk Banner -->
+      <div class="risk-card risk-low" id="risk-card">
+        <div class="risk-header">
+          <span class="risk-title">OVERALL RISK ASSESSMENT</span>
+          <span class="risk-badge badge-low" id="risk-badge">LOW RISK</span>
+        </div>
+        <p class="risk-summary" id="risk-summary">Click analyze or open a Terms of Service page to begin risk analysis.</p>
+      </div>
+
+      <!-- Stats Bar -->
+      <div class="stats-row" id="stats-row">
+        <div class="stat-box">
+          <span class="stat-value" id="stat-high">0</span>
+          <span class="stat-label">HIGH RISK</span>
+        </div>
+        <div class="stat-box">
+          <span class="stat-value" id="stat-medium">0</span>
+          <span class="stat-label">MEDIUM RISK</span>
+        </div>
+        <div class="stat-box">
+          <span class="stat-value" id="stat-total">0</span>
+          <span class="stat-label">TOTAL FLAGGED</span>
+        </div>
+      </div>
+
+      <!-- Clause List Header -->
+      <div class="section-title">
+        <span>Flagged Clauses</span>
+        <span class="count-pill" id="clause-count-pill">0 clauses</span>
+      </div>
+
+      <!-- Clause List Container -->
+      <div class="clause-list" id="clause-list">
+        <div class="empty-state">No legal clauses analyzed yet.</div>
+      </div>
+    </div>
+
+    <!-- Footer Action -->
+    <div class="popup-footer">
+      <button class="btn-analyze" id="btn-reanalyze">🔍 Re-analyze Active Tab</button>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
